@@ -38,7 +38,7 @@ enum Filters {
         guard let filter = CIFilter(name: "CIGaussianBlur") else { return nil }
         filter.setDefaults()
         filter.setValue(ciImage, forKey: kCIInputImageKey)
-        filter.setValue(4, forKey: kCIInputRadiusKey)
+        filter.setValue(5, forKey: kCIInputRadiusKey)
         
         guard let outputCIImage = filter.outputImage else { return nil }
         let outputImage = UIImage(ciImage: outputCIImage)

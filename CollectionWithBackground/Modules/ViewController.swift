@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     // MARK: - Constants
     
     private let imageParallax: CGFloat = 30
-    private let headerTranslation: CGFloat = 50
+    private let headerTranslation: CGFloat = 45
     private let headerRotationAngle: CGFloat = .pi * 0.1
     
     // MARK: - Properties
@@ -142,7 +142,6 @@ extension ViewController: UIScrollViewDelegate {
     
     private func updateImages(_ index: Int, percentage: CGFloat) {
         if !games.contains(index: index) { return }
-        print(index)
         
         if index < games.count - 1 {
             animationScreen(percentage: percentage)
@@ -194,12 +193,6 @@ extension ViewController {
     }
     
     private func animateHeaders(percentage: CGFloat) {
-//        var prespective = CATransform3DIdentity
-//        prespective.m34 = -1.0 / 500
-//
-//        var previousTransform = CATransform3DTranslate(prespective, 0, headerTranslation, 0)
-//        previousTransform = CATransform3DRotate(previousTransform, headerRotationAngle, 1, 0, 0)
-        
         previousHeader.alpha = 1 - percentage
         previousHeader.transform = CGAffineTransform.identity.translatedBy(x: 0, y: headerTranslation * percentage)
         
