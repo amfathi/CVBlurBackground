@@ -1,0 +1,22 @@
+# MacOS generated files
+.DS_Store
+
+# Pods
+Podfile.lock
+Pods/
+
+# Fastlane files
+output/
+
+#Build
+builds/
+*.xcarchive
+*.dSYM.zip
+*.ipa
+
+# Bundle
+Gemfile.lock
+
+# User related files
+*.xcuserdatad/
+*.xcuserstate

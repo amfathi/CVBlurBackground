@@ -13,6 +13,11 @@
 		76F16C5A2483907F00817A14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F16C582483907F00817A14 /* Main.storyboard */; };
 		76F16C5C2483908100817A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F16C5B2483908100817A14 /* Assets.xcassets */; };
 		76F16C5F2483908100817A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F16C5D2483908100817A14 /* LaunchScreen.storyboard */; };
+		76F16C6724839D4000817A14 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F16C6624839D4000817A14 /* GameCell.swift */; };
+		76F16C692483CBF000817A14 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F16C682483CBF000817A14 /* GameModel.swift */; };
+		76F16C712483CC5E00817A14 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F16C702483CC5E00817A14 /* Helpers.swift */; };
+		76F16C732483F63300817A14 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76F16C722483F63300817A14 /* HeaderView.xib */; };
+		76F16C752483F63A00817A14 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F16C742483F63A00817A14 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		76F16C5B2483908100817A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76F16C5E2483908100817A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76F16C602483908100817A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F16C6624839D4000817A14 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		76F16C682483CBF000817A14 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		76F16C702483CC5E00817A14 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		76F16C722483F63300817A14 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		76F16C742483F63A00817A14 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		76F16C512483907F00817A14 /* CollectionWithBackground */ = {
 			isa = PBXGroup;
 			children = (
+				76F16C6B2483CC0100817A14 /* App */,
+				76F16C6C2483CC0A00817A14 /* Modules */,
+				76F16C6D2483CC1600817A14 /* Views */,
+				76F16C6F2483CC4D00817A14 /* Others */,
+				76F16C6E2483CC2200817A14 /* SupportingFiles */,
+			);
+			path = CollectionWithBackground;
+			sourceTree = "<group>";
+		};
+		76F16C6B2483CC0100817A14 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				76F16C522483907F00817A14 /* AppDelegate.swift */,
 				76F16C542483907F00817A14 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		76F16C6C2483CC0A00817A14 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
 				76F16C562483907F00817A14 /* ViewController.swift */,
 				76F16C582483907F00817A14 /* Main.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		76F16C6D2483CC1600817A14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76F16C6624839D4000817A14 /* GameCell.swift */,
+				76F16C742483F63A00817A14 /* HeaderView.swift */,
+				76F16C722483F63300817A14 /* HeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76F16C6E2483CC2200817A14 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				76F16C5B2483908100817A14 /* Assets.xcassets */,
 				76F16C5D2483908100817A14 /* LaunchScreen.storyboard */,
 				76F16C602483908100817A14 /* Info.plist */,
 			);
-			path = CollectionWithBackground;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		76F16C6F2483CC4D00817A14 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				76F16C682483CBF000817A14 /* GameModel.swift */,
+				76F16C702483CC5E00817A14 /* Helpers.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +183,7 @@
 				76F16C5F2483908100817A14 /* LaunchScreen.storyboard in Resources */,
 				76F16C5C2483908100817A14 /* Assets.xcassets in Resources */,
 				76F16C5A2483907F00817A14 /* Main.storyboard in Resources */,
+				76F16C732483F63300817A14 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F16C572483907F00817A14 /* ViewController.swift in Sources */,
+				76F16C712483CC5E00817A14 /* Helpers.swift in Sources */,
 				76F16C532483907F00817A14 /* AppDelegate.swift in Sources */,
 				76F16C552483907F00817A14 /* SceneDelegate.swift in Sources */,
+				76F16C6724839D4000817A14 /* GameCell.swift in Sources */,
+				76F16C692483CBF000817A14 /* GameModel.swift in Sources */,
+				76F16C752483F63A00817A14 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +345,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CollectionWithBackground/Info.plist;
+				DEVELOPMENT_TEAM = ERCG8ZPCT3;
+				INFOPLIST_FILE = "$(SRCROOT)/CollectionWithBackground/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Fathi.CollectionWithBackground;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fathi.magin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,15 +363,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CollectionWithBackground/Info.plist;
+				DEVELOPMENT_TEAM = ERCG8ZPCT3;
+				INFOPLIST_FILE = "$(SRCROOT)/CollectionWithBackground/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Fathi.CollectionWithBackground;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fathi.magin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
