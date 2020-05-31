@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="CollectionWithBackground" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="CVBlurBackground" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="DWZ-R9-vAl"/>
                 <outlet property="subtitleLabel" destination="m3A-Yl-wOx" id="bTn-BC-pUC"/>
@@ -26,8 +26,8 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3A-Yl-wOx" userLabel="Subtitle">
-                    <rect key="frame" x="10" y="35.666666666666664" width="293" height="15.666666666666664"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                    <rect key="frame" x="10" y="35.666666666666664" width="293" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <color key="textColor" red="0.88804783938462251" green="0.88804783938462251" blue="0.88804783938462251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>

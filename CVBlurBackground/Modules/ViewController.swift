@@ -25,7 +25,6 @@ class ViewController: UIViewController {
     
     private let imageParallax: CGFloat = 30
     private let headerTranslation: CGFloat = 45
-    private let headerRotationAngle: CGFloat = .pi * 0.1
     
     // MARK: - Properties
     
@@ -44,7 +43,7 @@ class ViewController: UIViewController {
     
     private func setupInitialState() {
         if games.count > 0 {
-            setCurrenGame(games[0])
+            setCurrentGame(games[0])
         }
         
         if games.count > 1 {
@@ -61,7 +60,7 @@ class ViewController: UIViewController {
     
     // MARK: Update User Interface
     
-    private func setCurrenGame(_ game: Game) {
+    private func setCurrentGame(_ game: Game) {
         previousImageView.image = game.blurredImage
         previousHeader.titleLabel.text = game.name
         previousHeader.subtitleLabel.text = game.developer
@@ -148,7 +147,7 @@ extension ViewController: UIScrollViewDelegate {
         }
         
         if index == currentIndex { return }
-        setCurrenGame(games[index])
+        setCurrentGame(games[index])
         
         if games.contains(index: index + 1) {
             setNextGame(games[index + 1])

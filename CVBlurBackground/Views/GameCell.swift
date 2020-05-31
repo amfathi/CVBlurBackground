@@ -24,8 +24,6 @@ class GameCell: UICollectionViewCell {
         shadowView.layer.shadowOffset = .zero
         shadowView.layer.shadowRadius = 13
         shadowView.layer.shadowOpacity = 0.5
-        shadowView.layer.shouldRasterize = true
-        shadowView.layer.rasterizationScale = UIScreen.main.scale
         
     }
     
