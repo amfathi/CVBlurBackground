@@ -1,9 +1,8 @@
-# CVBlurBackground
-
 [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-lightgray)](LICENSE)
 ![Platform](https://img.shields.io/badge/PLATFORM-iOS-lightgray)
 ![Tool](https://img.shields.io/badge/UIKit-gray)
 
+# CVBlurBackground
 
 A collection cards with a animated blurred background &amp; headers.
 
